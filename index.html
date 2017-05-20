@@ -1,7 +1,377 @@
 <!DOCTYPE html>
-<html>
-<body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Anthony Anjorin's Website</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Catamaran:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
+
+    <!-- Plugin CSS -->
+    <link rel="stylesheet" href="lib/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="lib/simple-line-icons/css/simple-line-icons.css">
+    <link rel="stylesheet" href="lib/device-mockups/device-mockups.min.css">
+
+    <!-- Theme CSS -->
+    <link href="css/new-age.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body id="page-top">
+
+    <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
+                </button>
+                <a class="navbar-brand page-scroll"
+        href="#page-top">Anthony Anjorin</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+		    <li>
+                        <a class="page-scroll" href="#research">Research</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#profile">Profile</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#teaching">Teaching</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#service">Service</a>
+                    </li>
+		    <li>
+                        <a class="page-scroll" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+
+    <header>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-7">
+                    <div class="header-content">
+                        <div class="header-content-inner">
+			  <h2>
+			  I'm currently a junior professor for
+			  model-based software development at the
+			  computer science department of Paderborn University, Germany.
+			  </h2>
+                            <a href="#research" class="btn btn-outline
+        btn-xl page-scroll">My Research Interests</a>
+			  <br />
+			  <br />
+			  <a href="#contact" class="btn btn-outline
+		  btn-xl page-scroll">Get in Contact with Me</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-5">
+                    <div class="device-container">
+		      <img src="img/portrait.png" class="img-responsive" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section id="research" class="download bg-primary text-left">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 col-md-offset-2">
+                    <h3>Vision</h3>
+		  <p>
+		  I'm a software engineer with a particular interest in <i>language-oriented</i> software development.
+		  The vision for software engineering that I share with many other researchers is to one day reach a point where it becomes so easy to develop small, focused <i>Domain-Specific Languages (DSLs)</i>, that the average programmer will regard this as the normal thing to do; given a problem to solve, develop a suitable language in which you can <i>model</i> precisely what you want in your problem domain, then develop a <i>model transformation</i> to map this solution idea to a chosen solution domain.
+		  </p>
+		  
+		  <h3>Specialisation</h3>
+		  <p>
+		  The research field of <i>model-driven engineering</i> is all about realising this vision, and I've specialised and focused on model transformations in general, and <i>(model) consistency management</i> in particular.
+		  Consistency management encompasses a means of <i>specifying consistency</i> over models, and being able to: <i>generate</i> consistent models, <i>check</i> if a set of given models are consistent, and <i>restore</i> consistency for a given set of possibly inconsistent models.
+		  The community currently working on all aspects of consistency management refers to the area as <i>bidirectional transformations (bx)</i>.
+		  
+		  The reason I'm particularly interested in <i>bx</i> is that I can only really advocate the proliferation of numerous DSLs (and thus models in these DSLs), if we can <i>guarantee</i> that consistency can be restored and maintained as required in an efficient and effective manner.
+		  
+		  My favourite hammer for working on <i>bx</i> has been and is still <i>graph transformations</i> (which is also just basic category theory).
+		  A particularly simple flavour of graph transformations can be expressed using <i>Triple Graph Grammars (TGGs)</i>, and I've spent a good time of my life as an active researcher thinking about and extending the TGG formalism.
+</p>
+
+<h3>Contribution</h3>
+<p>
+I strive hard to be a balanced researcher, and I have made contributions towards developing the <i>formal</i> theory of TGGs (
+		  <a href="http://link.springer.com/chapter/10.1007/978-3-642-33654-6_24">
+		  <i class="fa fa-file-text-o" aria-hidden="true"></i></a>,
+		  <a href="http://link.springer.com/chapter/10.1007/978-3-319-09108-2_9">
+		  <i class="fa fa-file-text-o" aria-hidden="true"></i></a>,
+		  <a href="http://link.springer.com/chapter/10.1007/978-3-662-54494-5_11">
+		  <i class="fa fa-file-text-o" aria-hidden="true"></i></a>,
+                  <a href="http://www.sciencedirect.com/science/article/pii/S1045926X15300604">
+		  <i class="fa fa-file-text-o" aria-hidden="true"></i></a>
+)
+, as well as embodying this theory in <i>practical</i> tools you can trust and actually (want to) use (
+		  <a href="http://link.springer.com/chapter/10.1007/978-3-319-08789-4_10">
+		  <i class="fa fa-file-text-o" aria-hidden="true"></i></a>,
+                  <a href="http://link.springer.com/chapter/10.1007/978-3-319-40530-8_12">
+		  <i class="fa fa-file-text-o" aria-hidden="true"></i></a>
+). 
+I also try to be as <i>methodic</i> as possible, and have contributed to <i>systematically comparing</i> the diverse approaches to <i>bx</i> (
+		  <a href="https://journal.ub.tu-berlin.de/eceasst/article/view/865">
+		  <i class="fa fa-file-text-o" aria-hidden="true"></i></a>,
+		  <a href="https://journal.ub.tu-berlin.de/eceasst/article/view/939">
+		  <i class="fa fa-file-text-o" aria-hidden="true"></i></a>,
+		  <a href="http://ceur-ws.org/Vol-1133/paper-13.pdf">
+		  <i class="fa fa-file-text-o" aria-hidden="true"></i></a>,
+                  <a href="http://ceur-ws.org/Vol-1827/paper6.pdf">
+		  <i class="fa fa-file-text-o" aria-hidden="true"></i></a>
+
+), as well as developing techniques towards the reproducible <i>engineering</i> of quality <i>bx</i> solutions (
+		  <a href="http://ceur-ws.org/Vol-1396/bx2015.pdf#page=85">
+		  <i class="fa fa-file-text-o" aria-hidden="true"></i></a>,
+		  <a href="http://link.springer.com/chapter/10.1007/978-3-642-54804-8_24">
+		  <i class="fa fa-file-text-o" aria-hidden="true"></i></a>,
+		  <a href="http://link.springer.com/chapter/10.1007/978-3-642-36089-3_8">
+		  <i class="fa fa-file-text-o" aria-hidden="true"></i></a>
+).  Please refer to my <a href="#contact" class="page-scroll">Google Scholar profile</a> for a complete and up to date list of publications.
+		  </p>
+
+<h3>Research Projects</h3>
+<p>
+
+<ul>
+  <li>
+  <h4><a href="http://www.softwarecampus.de/aktuelles/forschungsprojekte/projekt/cme-concurrent-manufacturing-engineering/"> Concurrent Manufacturing Engineering (CME)</a></h4>
+  This was a case study for model synchronisation in the context of manufacturing engineering.
+  Refer to my PhD thesis
+  (
+  <a href="http://tuprints.ulb.tu-darmstadt.de/4399/">
+  <i class="fa fa-file-text-o" aria-hidden="true"></i></a>
+  )
+  for a detailed overview.  This <a href="https://www.youtube.com/watch?v=BKdw67zrjOw"> screencast</a> demonstrates the developed synchroniser.
+  <br />
+  <br />
+  <small>A Software Campus project with TU Darmstadt as academic partner and Siemens AG as industrial partner.</small>
+  <br />
+  <small>Jan 2013 - Dez 2013</small>
+  </li>
+  
+  <br/>
+
+   <li>
+  <h4><a href="http://www.crystal-artemis.eu">CRYSTAL - Critical System Engineering Acceleration</a></h4>
+  I worked on this research project during my time as a <a href="http://www.chalmers.se/en/staff/Pages/anjorin.aspx">post-doc at Chalmers (Gothenburg, Sweden)</a>.
+  Results of my work included an analysis of the potential and feasibility of transitioning from informal requirements to more formal models in the embedded industry 
+  (
+  <a href="http://tuprints.ulb.tu-darmstadt.de/4399/">
+  <i class="fa fa-file-text-o" aria-hidden="true"></i></a>
+  ).
+  <br />
+  <br />
+  <small>Jul 2015 – Mar 2016</small>
+  </li>
+  
+  <br />
+  
+  <li>
+  <h4><a href="http://www.amalthea-project.org">AMALTHEA4Public</a></h4>
+  I worked on this research project during my time as a <a href="http://www.chalmers.se/en/staff/Pages/anjorin.aspx">post-doc at Chalmers (Gothenburg, Sweden)</a>.
+  Results of my work included a survey and analysis of the current use, challenges, and potential of traceability management solutions in the industry  
+  (
+  <a href="http://ieeexplore.ieee.org/abstract/document/7582777/">
+  <i class="fa fa-file-text-o" aria-hidden="true"></i></a>,
+  <a href="http://ieeexplore.ieee.org/abstract/document/7765527/">
+  <i class="fa fa-file-text-o" aria-hidden="true"></i></a>
+  ).
+  I also helped initiate <a href="https://projects.eclipse.org/proposals/capra">Capra</a>, a flexible traceability management tool that is now being developed as an Eclipse project. 
+  <br />
+  <br />
+  <small>Jul 2015 – Mar 2016</small>
+  </li>
+</ul>
+  
+</p>
+
+<h3>Current Interests (things I'm working on at the moment)</h3>
+<p>
+<ul>
+<li>  
+I'm still very much interested in establishing a toolsuite for consistency management tasks based on TGGs as an underlying formalism.
+If you're interested in our progress and current challenges, checkout the current roadmap
+(
+<a href="https://journal.ub.tu-berlin.de/eceasst/article/view/1031">
+<i class="fa fa-file-text-o" aria-hidden="true"></i></a>
+)
+for this endeavour.
+</li>
+<br />
+
+<li>
+Influenced by <a href="http://www.es.tu-darmstadt.de/es/team/gergely-varro/">Gergeley Varró</a> and his work on <i>incremental graph pattern matching</i>, I have started exploring the potential of using an incremental graph pattern matcher as an underlying engine for diverse consistency management tasks.
+This is currently joint work performed in close collaboration with my former office mate <a href="http://www.es.tu-darmstadt.de/es/team/erhan-leblebici/">Erhan Leblebici</a> and my doctor father <a href="http://www.es.tu-darmstadt.de/es/team/andy-schuerr/">Andy Schürr</a>.
+</li>
+<br />
+
+<li>
+Inspired by work in the research area of <i>method engineering</i> performed by my current colleagues in the research group of <a href="https://cs.uni-paderborn.de/dbis/personal/arbeitsgruppe/mitarbeiter/prof-gregor-engels/visitenkarte/">Gregor Engels</a>, I have started revisiting all my previous work and old projects on synchronisation scenarios and other consistency management applications.
+My hope is that approaches in method engineering can provide a promising means of extracting and packaging reusable knowledge and experience from these past projects in the form of reusable <i>method fragments</i> and <i>method patterns</i>.  
+</li>
+
+</ul>
+</p>
+
+<a href="#profile" class="btn btn-profile
+btn-xl page-scroll">My Profile</a>
+</div>
+</div>
+</div>
+
+</section>
+
+     <section id="profile" class="download bg-profile text-left">
+        <div class="container">
+            <div class="row">
+                 <div class="col-md-8 col-md-offset-2">
+                    
+		  <p>
+
+		  </p>
+		    <a href="#teaching" class="btn btn-outline
+		  btn-xl page-scroll">My Teaching Experience</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+	<section id="teaching" class="download bg-primary text-left">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 col-md-offset-2">
+                    
+		  <p>
+
+		  </p>
+		  <a href="#service" class="btn btn-profile
+		  btn-xl page-scroll">Academic Service</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+   <section id="service" class="download bg-profile text-left">
+        <div class="container">
+            <div class="row">
+                 <div class="col-md-8 col-md-offset-2">
+                    
+		  <p>
+
+		   </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="contact" class="contact bg-primary">
+	 <div class="container-fluid">
+            <div class="row">
+	    <div class="col-md-2 col-xs-4 text-center">
+	    <div class="service-box">
+	      <a href="http://www.emoflon.org">
+	      <img src="img/emoflon.png" alt="emoflon" style="width:128px;height:128px;">
+	      </a>
+	    </div>
+	    </div>
+
+	    <div class="col-md-2 col-xs-4 text-center">
+	    <div class="service-box">
+	      <a href="https://scholar.google.ca/citations?user=jTNl4QYAAAAJ&hl=en">
+	      <img src="img/googlescholar.png" alt="google scholar" style="width:128px;height:128px;">
+	      </a>
+	    </div>
+	    </div>
+
+	    <div class="col-md-2 col-xs-4 text-center">
+	    <div class="service-box">
+	      <a href="https://www.linkedin.com/in/anthony-anjorin-666b88111/">
+	      <img src="img/linkedin.png" alt="linkedin" style="width:128px;height:128px;">
+	      </a>
+	    </div>
+	    </div>
+
+		
+	    <div class="col-md-2 col-xs-4 text-center">
+	    <div class="service-box">
+	      <a href="http://www.researchgate.net/profile/Anthony_Anjorin">
+	      <img src="img/researchgate.png" alt="research gate" style="width:128px;height:128px;">
+	      </a>
+	    </div>
+	    </div>
+
+	    <div class="col-md-2 col-xs-4 text-center">
+	    <div class="service-box">
+	      <a href="https://www.mendeley.com/profiles/tony-anjorin/">
+	      <img src="img/mendeley.png" alt="mendeley" style="width:128px;height:128px;">
+	      </a>
+	    </div>
+	    </div>
+	    
+	    <div class="col-md-2 col-xs-4 text-center">
+	    <div class="service-box">
+	      <a href="https://www.xing.com/profile/Anthony_Anjorin">
+	      <img src="img/xing.png" alt="xing" style="width:128px;height:128px;">
+	      </a>
+	    </div>
+	    </div>				
+	    </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2017 Anthony Anjorin. All Rights Reserved. Built with GitHub Pages and Bootstrap</p>
+        </div>
+    </footer>
+
+    <!-- jQuery -->
+    <script src="lib/jquery/jquery.min.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="lib/bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+
+    <!-- Theme JavaScript -->
+    <script src="js/new-age.min.js"></script>
+
 </body>
+
 </html>
